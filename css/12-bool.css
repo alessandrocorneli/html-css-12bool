@@ -1,10 +1,12 @@
 .debug{
-  
+
 }
 
 .debug .container{
   border: 1px solid black;
   background-color: #FFC0CB;
+  text-align: center;
+  line-height: 200px;
 }
 
 .debug .container [class*="col"] {
@@ -12,8 +14,10 @@
   height: 200px;
 }
 
-.debug .container [class*="nested"] {
+.debug .container [class*="col"] [class*=nested] {
   border: 1px solid white;
+  height: 200px;
+  background-color: #F07F80;
 }
 
 *{
@@ -26,7 +30,6 @@
   max-width: 1170px;
   margin: 0 auto;
 }
-
 .container::after{
   content: "";
   display: table;
@@ -71,5 +74,43 @@
   width: calc((100% / 12) *11);
 }
 .col12{
+  width: calc((100% / 12) *12);
+}
+
+
+.nested-col1{
+  width: calc((100% / 12) *1);
+}
+.nested-col2{
+  width: calc((100% / 12) *2);
+}
+.nested-col3{
+  width: calc((100% / 12) *3);
+}
+.nested-col4{
+  width: calc((100% / 12) *4);
+}
+.nested-col5{
+  width: calc((100% / 12) *5);
+}
+.nested-col6{
+  width: calc((100% / 12) *6);
+}
+.nested-col7{
+  width: calc((100% / 12) *7);
+}
+.nested-col8{
+  width: calc((100% / 12) *8);
+}
+.nested-col9{
+  width: calc((100% / 12) *9);
+}
+.nested-col10{
+  width: calc((100% / 12) *10);
+}
+.nested-col11{
+  width: calc((100% / 12) *11);
+}
+.nested-col12{
   width: calc((100% / 12) *12);
 }
