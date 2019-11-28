@@ -1,14 +1,19 @@
 .debug{
-
+  
 }
 
 .debug .container{
   border: 1px solid black;
+  background-color: #FFC0CB;
 }
 
 .debug .container [class*="col"] {
   border: 1px solid black;
   height: 200px;
+}
+
+.debug .container [class*="nested"] {
+  border: 1px solid white;
 }
 
 *{
